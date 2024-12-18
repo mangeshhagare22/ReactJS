@@ -48,7 +48,9 @@ npm install -g json-server
 Create a JSON file to act as a database:
 Create a folder named data in the project directory.
 Inside the data folder, create a file named react-db.json.
-Add the following content to react-db.json:
+
+### Add the following content to react-db.json:
+
 {
 "products": [
 { "id": 1, "productName": "iPhone", "price": 8900, "quantity": 0 },
@@ -83,7 +85,9 @@ NavBar.jsx: Added navigation links.
 NoMatchPage.jsx: Component for handling non-existent routes.
 App.jsx: Main application component.
 index.js: Entry point of the application.
-Implementation Details
+
+### Implementation Details
+
 Basic Routing with React Router
 Routing is a mechanism that maps between a component and a URL. Here's how it's implemented in this project:
 
@@ -177,7 +181,9 @@ Shopping Cart
 }
 
 export default NavBar;
-Points to Remember
+
+# Points to Remember
+
 Understanding Routing in React
 Routing Mechanism: Routing maps between a component and a URL. For example, when the URL is /dashboard, the Dashboard component is displayed.
 BrowserRouter: A router that uses the HTML5 history API to keep your UI in sync with the URL.
@@ -194,7 +200,9 @@ Redirects: Know how to implement redirects to handle navigation programmatically
 Protected Routes: Implement protected routes to restrict access to certain parts of the application based on user authentication.
 404 Page: Ensure a user-friendly experience by handling non-existent routes with a custom 404 page.
 License
-This project is licensed under the MIT License.
 
-Author
+## This project is licensed under the MIT License.
+
+## Author
+
 Developed by Mangesh Hagare.
