@@ -1,28 +1,36 @@
-React Application with Navigation
+# React Application with Navigation
+
 This project demonstrates how to implement navigation links in a React application using React Router. It includes various pages such as Dashboard, Customers, and Shopping Cart, and allows navigation between these pages without making server requests, maintaining the single-page application (SPA) behavior.
 
-Features
-Navigation Links: Added navigation links for Dashboard, Customers, and Shopping Cart in the navbar.
-React Router: Used React Router DOM for handling navigation and routing in the application.
-SPA Behavior: Ensured navigation links do not trigger server requests, maintaining SPA behavior.
-Styling: Styled navigation links to display horizontally using list items.
+## Features
 
-Getting Started
-Prerequisites
-Node.js
-npm (Node Package Manager)
-Installation
+- **Navigation Links**: Added navigation links for Dashboard, Customers, and Shopping Cart in the navbar.
+- **React Router**: Used React Router DOM for handling navigation and routing in the application.
+- **SPA Behavior**: Ensured navigation links do not trigger server requests, maintaining SPA behavior.
+- **Styling**: Styled navigation links to display horizontally using list items.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm (Node Package Manager)
+
+### Installation
+
 Set up the environment:
 
-Install Node.js: Download and install Node.js from nodejs.org. Prefer using the LTS version for better compatibility.
-Install Visual Studio Code: Download and install Visual Studio Code from code.visualstudio.com.
+1. **Install Node.js**: Download and install Node.js from nodejs.org. Prefer using the LTS version for better compatibility.
+2. **Install Visual Studio Code**: Download and install Visual Studio Code from code.visualstudio.com.
 
 Install Create React App:
 
-Open the command prompt or terminal on your machine.
-Run the following command to install Create React App globally:
-npm install create-react-app@3.4.1 -g
-Create a new React application:
+1. Open the command prompt or terminal on your machine.
+2. Run the following command to install Create React App globally:
+   ```bash
+   npm install create-react-app@3.4.1 -g
+   Create a new React application:
+   ```
 
 Create a new directory for your React applications:
 mkdir c:\react
@@ -34,13 +42,10 @@ cd my-first-app
 Install project dependencies:
 
 npm install
-Setting Up JSON Server:
-
+Setting Up JSON Server
 Install JSON Server globally:
-
 npm install -g json-server
 Create a JSON file to act as a database:
-
 Create a folder named data in the project directory.
 Inside the data folder, create a file named react-db.json.
 Add the following content to react-db.json:
@@ -63,8 +68,10 @@ Start JSON Server:
 json-server --watch data/react-db.json --port 5000
 Running the Application
 Start the development server:
+
 npm start
 Open your browser and navigate to http://localhost:3000.
+
 Project Structure
 src/: Contains the source code.
 components/: Contains React components.
@@ -128,8 +135,7 @@ return (
 <a className="navbar-brand" href="/#">
 eCommerce
 </a>
-
-          <button
+<button
             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -138,40 +144,35 @@ eCommerce
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
-                <Link to="/" className="nav-link">
-                  Login
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link to="/dashboard" className="nav-link">
-                  Dashboard
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link to="/customers" className="nav-link">
-                  Customers
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link to="/cart" className="nav-link">
-                  Shopping Cart
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </React.Fragment>
-    );
-
+<span className="navbar-toggler-icon"></span>
+</button>
+<div className="collapse navbar-collapse" id="navbarSupportedContent">
+<ul className="navbar-nav mr-auto">
+<li className="nav-item">
+<Link to="/" className="nav-link">
+Login
+</Link>
+</li>
+<li className="nav-item">
+<Link to="/dashboard" className="nav-link">
+Dashboard
+</Link>
+</li>
+<li className="nav-item">
+<Link to="/customers" className="nav-link">
+Customers
+</Link>
+</li>
+<li className="nav-item">
+<Link to="/cart" className="nav-link">
+Shopping Cart
+</Link>
+</li>
+</ul>
+</div>
+</nav>
+</React.Fragment>
+);
 }
 }
 
